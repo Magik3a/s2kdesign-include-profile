@@ -1,0 +1,94 @@
+<!--Start of the content-->
+
+<row class="row">
+    
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <span class="btn btn-default center-block button-video-up" type="submit">Академия на Телерик<br> HTML & CSS  </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-primary btn-lg btn-block button-video-play">Натисни тук за да<br> отвориш видеото </button>
+                    <div style="display:none;" class="embed-responsive embed-responsive-16by9 video-load">
+                        <iframe src="https://www.youtube.com/embed/4m8U_7kPV9Q?list=PLF4lVL1sPDSn0iG8qSv8qH0VjAkUlpUED" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="btn btn-default center-block button-video-up" type="submit">Академия на Телерик<br> C# Програмиране част 1</span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-primary btn-lg btn-block button-video-play">Натисни тук за да отвориш видеото</button>
+                    <div style="display:none;" class="embed-responsive embed-responsive-16by9 video-load">
+                        <iframe src="https://www.youtube.com/embed/4m8U_7kPV9Q?list=PLF4lVL1sPDSn0iG8qSv8qH0VjAkUlpUED" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="btn btn-default center-block button-video-up" type="submit">Академия на Телерик<br> ООП </span>
+
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <button id="button" type="button" class="btn btn-primary btn-lg btn-block button-video-play">Натисни тук за да отвориш видеото</button>
+                    <div id="effect" style="display:none;" class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/4m8U_7kPV9Q?list=PLF4lVL1sPDSn0iG8qSv8qH0VjAkUlpUED" allowfullscreen></iframe>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <span class="btn btn-default center-block button-video-up" type="submit">Академия на Телерик<br> C# Програмиране част 2</span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-primary btn-lg btn-block button-video-play">Натисни тук за да отвориш видеото</button>
+                    <div style="display:none;" class="embed-responsive embed-responsive-16by9 video-load">
+                        <iframe src="https://www.youtube.com/embed/4m8U_7kPV9Q?list=PLF4lVL1sPDSn0iG8qSv8qH0VjAkUlpUED" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </row>
+<script>
+    $(function () {
+        $(".button-video-play").click(function () {
+            $(this).hide(1000, function () {
+                $(this).siblings().fadeIn(1000).removeAttr("style");
+            });
+        });
+    });
+
+</script>
+
